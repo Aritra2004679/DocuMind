@@ -6,6 +6,7 @@
 .venv/
 venv/
 env/
+clean_test_venv/
 
 # Python cache
 __pycache__/
@@ -15,9 +16,10 @@ __pycache__/
 .idea/
 .vscode/
 
-# Generated FAISS/vector indexes
+# Generated FAISS/vector indexes and BM25 store
 faiss_index/
 test_index/
+bm25_store/
 
 # Test/cache files
 .pytest_cache/

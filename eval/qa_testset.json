@@ -1,0 +1,54 @@
+[
+  {
+    "question": "What are solids?",
+    "ground_truth": "Solids have a constant shape and volume. Their particles are constantly moving, colliding with other particles, and changing their direction and velocity, but each particle is trapped in a small cage whose walls are formed by other particles that are strongly attracted to each other."
+  },
+  {
+    "question": "What are the properties of solids?",
+    "ground_truth": "Solids have particles that are constantly moving. Up to 70% of a solid's volume is occupied by particles, with 30% empty space. Strong attractions keep the particles trapped in a cage. Constant collisions lead to changes in direction and velocity, but constant volume and shape are maintained due to strong attractions and little freedom of motion."
+  },
+  {
+    "question": "What are liquids?",
+    "ground_truth": "Liquids have a constant volume but variable shape. Their particles are moving fast enough to break the attractions between particles that form the walls of the cage that surround particles in the solid form, so each particle in a liquid is constantly moving from one part of the liquid to another."
+  },
+  {
+    "question": "What are the properties of liquids?",
+    "ground_truth": "In liquids, particles are constantly moving, and up to 70% of the volume is occupied by particles, with 30% empty. Attractions between particles are strong but not strong enough to keep particles from moving throughout the liquid. Constant collisions lead to changes in direction and velocity. Liquids have a constant volume, due to significant attractions between particles that keep them at a constant average distance, but not a constant shape, due to the particles' freedom of motion."
+  },
+  {
+    "question": "What are gases?",
+    "ground_truth": "Gases have variable shape and volume, with large average distances between particles and little attraction between particles. Particles undergo constant collisions, leading to constant changes in direction and velocity."
+  },
+  {
+    "question": "What are the properties of gases?",
+    "ground_truth": "In gases, particles are constantly moving in straight-line paths. About 0.1% of the volume is occupied by particles, with 99.9% empty space. The average distance between particles is about 10 times their diameter. There are no significant attractions or repulsions between particles. Constant collisions lead to changes in direction and velocity, and gases have variable volume and shape due to the lack of attractions and the particles' great freedom of motion."
+  },
+  {
+    "question": "What is Kinetic Molecular Theory?",
+    "ground_truth": "Kinetic Molecular Theory states that all matter is composed of tiny particles that are in constant motion. Increased temperature reflects increased motion of particles. Solids, liquids, and gases differ in the freedom of motion of their particles and in how strongly the particles attract each other."
+  },
+  {
+    "question": "How does temperature relate to particle motion according to Kinetic Molecular Theory?",
+    "ground_truth": "Increased temperature reflects increased motion of particles."
+  },
+  {
+    "question": "How much of a solid's volume is occupied by its particles?",
+    "ground_truth": "Up to 70% of a solid's volume is occupied by particles, leaving about 30% empty."
+  },
+  {
+    "question": "How much of a gas's volume is occupied by its particles?",
+    "ground_truth": "About 0.1% of a gas's volume is occupied by particles, with 99.9% empty space."
+  },
+  {
+    "question": "What is evaporation?",
+    "ground_truth": "Evaporation occurs when a particle at the surface of a liquid gets a sharp kick from surrounding particles that propels it out of the liquid. The particle ends up traveling too fast for the attractions to the liquid particles to draw it back, so it becomes a gas particle."
+  },
+  {
+    "question": "What is a scientific model?",
+    "ground_truth": "A model is a simplified approximation of reality. Scientific models are simplified but useful representations of something real."
+  },
+  {
+    "question": "How does the freedom of motion of particles differ between solids and gases?",
+    "ground_truth": "In solids, each particle is trapped in a small cage formed by strongly attracted neighboring particles, giving very limited freedom of motion. In gases, particles have large average distances between them and little attraction to each other, giving them great freedom of motion and allowing constant collisions that change their direction and velocity."
+  }
+]
