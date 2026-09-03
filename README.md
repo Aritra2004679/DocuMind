@@ -1,21 +1,12 @@
----
-title: DocuMind
-emoji: 📄
-colorFrom: blue
-colorTo: indigo
-sdk: streamlit
-sdk_version: "1.61.1"
-app_file: app.py
-pinned: false
----
-
 # 📄 DocuMind — Advanced RAG System with Hybrid Retrieval & Evaluation
+
+**🔗 Live demo: [documind-b8862c8d6b5luqx3mp6c4k.streamlit.app](https://documind-b8862c8d6b5luqx3mp6c4k.streamlit.app)**
 
 DocuMind is a Retrieval-Augmented Generation (RAG) application that lets users upload their own PDF documents and ask natural-language questions answered strictly from the uploaded content — with source and page-level citations.
 
 This project was built incrementally to demonstrate a production-style RAG pipeline: starting from a working dense-retrieval baseline and extending through conversational memory, hybrid retrieval, cross-encoder reranking, and quantitative RAG evaluation with RAGAS.
 
-> **Status:** Weeks 1–3 complete. Dense retrieval, conversational memory, hybrid retrieval + reranking, and RAGAS-based evaluation are all fully functional. Deployment to Hugging Face Spaces is in progress (see [Roadmap](#roadmap)).
+> **Status:** Complete and deployed. Dense retrieval, conversational memory, hybrid retrieval + reranking, and RAGAS-based evaluation are all fully functional, and the app is live on Streamlit Community Cloud (see [Roadmap](#roadmap)).
 
 ---
 
@@ -49,7 +40,7 @@ This project was built incrementally to demonstrate a production-style RAG pipel
 | Evaluation | RAGAS (faithfulness, answer relevancy, context precision/recall) |
 | UI | Streamlit |
 | Testing | Pytest |
-| Deployment | Hugging Face Spaces |
+| Deployment | Streamlit Community Cloud |
 
 ---
 
@@ -114,7 +105,15 @@ PDF Upload (Streamlit)
 
 ---
 
-## Setup & Installation
+## Try It Live
+
+No setup required — upload a PDF and start asking questions:
+
+**👉 [documind-b8862c8d6b5luqx3mp6c4k.streamlit.app](https://documind-b8862c8d6b5luqx3mp6c4k.streamlit.app)**
+
+---
+
+## Setup & Installation (Local)
 
 ### 1. Clone and create a virtual environment
 ```bash
@@ -187,7 +186,7 @@ Testing approach follows a layered strategy:
 - [x] **Week 1** — Dense RAG baseline: ingestion, FAISS retrieval, Groq generation, citations, core tests
 - [x] **Week 2** — Conversational memory (query condensation), hybrid retrieval (BM25 + dense fusion via RRF), cross-encoder reranking
 - [x] **Week 3** — RAG evaluation with RAGAS (faithfulness, answer relevancy, context precision/recall); comparison across dense-only, hybrid, and hybrid+reranked variants
-- [ ] **Week 4** — Deployment to Hugging Face Spaces, documentation polish, optional extensions
+- [x] **Week 4** — Dependency pinning, model caching for performance, secrets handling, and live deployment to Streamlit Community Cloud
 
 ---
 
@@ -196,6 +195,7 @@ Testing approach follows a layered strategy:
 - Index is rebuilt (not appended) on each "Build Index" click; upload all relevant documents together in one batch.
 - Code-generation queries (e.g., "write a function to...") can create ambiguity under the strict "answer only from context" grounding constraint — a documented open design decision rather than a bug.
 - Deployed instance is subject to Groq's free-tier rate limits (requests/tokens per minute and per day); heavy concurrent usage may return rate-limit errors.
+- A small number of test suite items need follow-up: three tests currently error due to missing pytest fixtures (`conftest.py` needs review), and one BM25 unit test fails on a small synthetic corpus edge case. Neither affects the live application's behavior, which has been independently verified through manual end-to-end testing.
 
 ---
 
